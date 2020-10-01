@@ -8,15 +8,15 @@
 <meta name="generator" content="Jekyll v4.1.1" />
 <meta property="og:title" content="PyGL" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Field theories without time-reversal symmetry in Python" />
-<meta property="og:description" content="Field theories without time-reversal symmetry in Python" />
+<meta name="description" content="Statistical field theory in Python" />
+<meta property="og:description" content="Statistical field theory in Python" />
 <link rel="canonical" href="https://rajeshrinet.github.io/blog/markdown/2020/08/15/active-droplets.html" />
 <meta property="og:url" content="https://rajeshrinet.github.io/blog/markdown/2020/08/15/active-droplets.html" />
 <meta property="og:site_name" content="Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-08-15T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://rajeshrinet.github.io/blog/markdown/2020/08/15/active-droplets.html","@type":"BlogPosting","headline":"PyGL","dateModified":"2020-08-15T00:00:00-05:00","datePublished":"2020-08-15T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rajeshrinet.github.io/blog/markdown/2020/08/15/active-droplets.html"},"description":"Field theories without time-reversal symmetry in Python","@context":"https://schema.org"}</script>
+{"url":"https://rajeshrinet.github.io/blog/markdown/2020/08/15/active-droplets.html","@type":"BlogPosting","headline":"PyGL","dateModified":"2020-08-15T00:00:00-05:00","datePublished":"2020-08-15T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rajeshrinet.github.io/blog/markdown/2020/08/15/active-droplets.html"},"description":"Statistical field theory in Python","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rajeshrinet.github.io/blog/feed.xml" title="Blog" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -87,7 +87,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">PyGL</h1><p class="page-description">Field theories without time-reversal symmetry in Python</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-08-15T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">PyGL</h1><p class="page-description">Statistical field theory in Python</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-08-15T00:00:00-05:00" itemprop="datePublished">
         Aug 15, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -111,21 +111,21 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
 <li class="toc-entry toc-h2"><a href="#about">About</a></li>
-<li class="toc-entry toc-h2"><a href="#research-applications-of-pystokes">Research applications of PyStokes</a></li>
+<li class="toc-entry toc-h2"><a href="#research-applications-of-pygl">Research applications of PyGL</a></li>
 <li class="toc-entry toc-h2"><a href="#self-shearing-instability-in-active-matter">Self-shearing instability in active matter</a></li>
-<li class="toc-entry toc-h2"><a href="#self-propulsion-of-active-droplets-without-liquid-crystalline-order">Self-propulsion of active droplets without liquid-crystalline order</a></li>
+<li class="toc-entry toc-h2"><a href="#self-propulsion-of-active-droplets">Self-propulsion of active droplets</a></li>
 </ul><h2 id="about">
 <a class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h2>
 <p><img src="https://raw.githubusercontent.com/rajeshrinet/pygl/master/examples/banner.jpeg" alt="Imagel"></p>
 
-<p><a href="https://github.com/rajeshrinet/pygl">PyGL</a> is a numerical library to simulate field theories without time-reversal symmetry in Python. The name GL corresponds to the <a href="https://en.wikipedia.org/wiki/Ginzburg%E2%80%93Landau_theory">Ginzburg–Landau</a> theory. The library constructs differentiation matrices using finite-difference and spectral methods. The library also allows to compute fluid flow on a 2D or 3D grid from the solution of the Stokes equation using a spectral solver.</p>
+<p><a href="https://github.com/rajeshrinet/pygl">PyGL</a> is a numerical library for statistical field theory in Python. The name GL corresponds to the <a href="https://en.wikipedia.org/wiki/Ginzburg%E2%80%93Landau_theory">Ginzburg–Landau</a> theory. The library has been specifically designed to study field theories without time-reversal symmetry. The library can be used to study models of statistical physics of various symmetries and conservation laws. In particular, we allow models with mass and momentum conservations. The library constructs differentiation matrices using finite-difference and spectral methods. To study the role of momentum conservation, the library also allows computing fluid flow from the solution of the Stokes equation.</p>
 
 <p><br><br></p>
 
-<h2 id="research-applications-of-pystokes">
-<a class="anchor" href="#research-applications-of-pystokes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Research applications of PyStokes</h2>
+<h2 id="research-applications-of-pygl">
+<a class="anchor" href="#research-applications-of-pygl" aria-hidden="true"><span class="octicon octicon-link"></span></a>Research applications of PyGL</h2>
 
-<p>In what follows, we present we present a selected list of research applications of PyStokes.</p>
+<p>In what follows, we present we present a selected list of research applications of PyGL.</p>
 
 <h2 id="self-shearing-instability-in-active-matter">
 <a class="anchor" href="#self-shearing-instability-in-active-matter" aria-hidden="true"><span class="octicon octicon-link"></span></a>Self-shearing instability in active matter</h2>
@@ -138,8 +138,8 @@ window.onload = wrap_img;
 
 <p><br><br></p>
 
-<h2 id="self-propulsion-of-active-droplets-without-liquid-crystalline-order">
-<a class="anchor" href="#self-propulsion-of-active-droplets-without-liquid-crystalline-order" aria-hidden="true"><span class="octicon octicon-link"></span></a>Self-propulsion of active droplets without liquid-crystalline order</h2>
+<h2 id="self-propulsion-of-active-droplets">
+<a class="anchor" href="#self-propulsion-of-active-droplets" aria-hidden="true"><span class="octicon octicon-link"></span></a>Self-propulsion of active droplets</h2>
 <p><img src="https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/active_droplets.JPG" alt=""> 
 Reference: <a href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.032024">Rajesh Singh, Elsen Tjhung, and Michael E. Cates. Phys. Rev. Research 2, 032024(R) (2020)</a></p>
 

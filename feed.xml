@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://rajeshrinet.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://rajeshrinet.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-10-01T06:13:18-05:00</updated><id>https://rajeshrinet.github.io/blog/feed.xml</id><title type="html">Blog</title><entry><title type="html">PyGL</title><link href="https://rajeshrinet.github.io/blog/markdown/2020/08/15/active-droplets.html" rel="alternate" type="text/html" title="PyGL" /><published>2020-08-15T00:00:00-05:00</published><updated>2020-08-15T00:00:00-05:00</updated><id>https://rajeshrinet.github.io/blog/markdown/2020/08/15/active-droplets</id><content type="html" xml:base="https://rajeshrinet.github.io/blog/markdown/2020/08/15/active-droplets.html">&lt;h2 id=&quot;about&quot;&gt;About&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://rajeshrinet.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://rajeshrinet.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-10-01T06:26:32-05:00</updated><id>https://rajeshrinet.github.io/blog/feed.xml</id><title type="html">Blog</title><entry><title type="html">PyGL</title><link href="https://rajeshrinet.github.io/blog/markdown/2020/08/15/active-droplets.html" rel="alternate" type="text/html" title="PyGL" /><published>2020-08-15T00:00:00-05:00</published><updated>2020-08-15T00:00:00-05:00</updated><id>https://rajeshrinet.github.io/blog/markdown/2020/08/15/active-droplets</id><content type="html" xml:base="https://rajeshrinet.github.io/blog/markdown/2020/08/15/active-droplets.html">&lt;h2 id=&quot;about&quot;&gt;About&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/rajeshrinet/pygl/master/examples/banner.jpeg&quot; alt=&quot;Imagel&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/rajeshrinet/pygl&quot;&gt;PyGL&lt;/a&gt; is a numerical library to simulate field theories without time-reversal symmetry in Python. The name GL corresponds to the &lt;a href=&quot;https://en.wikipedia.org/wiki/Ginzburg%E2%80%93Landau_theory&quot;&gt;Ginzburg–Landau&lt;/a&gt; theory. The library constructs differentiation matrices using finite-difference and spectral methods. The library also allows to compute fluid flow on a 2D or 3D grid from the solution of the Stokes equation using a spectral solver.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/rajeshrinet/pygl&quot;&gt;PyGL&lt;/a&gt; is a numerical library for statistical field theory in Python. The name GL corresponds to the &lt;a href=&quot;https://en.wikipedia.org/wiki/Ginzburg%E2%80%93Landau_theory&quot;&gt;Ginzburg–Landau&lt;/a&gt; theory. The library has been specifically designed to study field theories without time-reversal symmetry. The library can be used to study models of statistical physics of various symmetries and conservation laws. In particular, we allow models with mass and momentum conservations. The library constructs differentiation matrices using finite-difference and spectral methods. To study the role of momentum conservation, the library also allows computing fluid flow from the solution of the Stokes equation.&lt;/p&gt;
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;research-applications-of-pystokes&quot;&gt;Research applications of PyStokes&lt;/h2&gt;
+&lt;h2 id=&quot;research-applications-of-pygl&quot;&gt;Research applications of PyGL&lt;/h2&gt;
 
-&lt;p&gt;In what follows, we present we present a selected list of research applications of PyStokes.&lt;/p&gt;
+&lt;p&gt;In what follows, we present we present a selected list of research applications of PyGL.&lt;/p&gt;
 
 &lt;h2 id=&quot;self-shearing-instability-in-active-matter&quot;&gt;Self-shearing instability in active matter&lt;/h2&gt;
 
@@ -19,7 +19,7 @@
 
 &lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 
-&lt;h2 id=&quot;self-propulsion-of-active-droplets-without-liquid-crystalline-order&quot;&gt;Self-propulsion of active droplets without liquid-crystalline order&lt;/h2&gt;
+&lt;h2 id=&quot;self-propulsion-of-active-droplets&quot;&gt;Self-propulsion of active droplets&lt;/h2&gt;
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/active_droplets.JPG&quot; alt=&quot;&quot; /&gt; 
 Reference: &lt;a href=&quot;https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.032024&quot;&gt;Rajesh Singh, Elsen Tjhung, and Michael E. Cates. Phys. Rev. Research 2, 032024(R) (2020)&lt;/a&gt;&lt;/p&gt;
 
