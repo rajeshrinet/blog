@@ -1,7 +1,7 @@
 ---
 toc: true
 layout: post
-description: Field theories without time-reversal symmetry in Python
+description: Statistical field theory in Python 
 categories: [markdown]
 title: PyGL
 sticky_rank: 2
@@ -11,13 +11,14 @@ sticky_rank: 2
 ![Imagel](https://raw.githubusercontent.com/rajeshrinet/pygl/master/examples/banner.jpeg)
 
 
-[PyGL](https://github.com/rajeshrinet/pygl) is a numerical library to simulate field theories without time-reversal symmetry in Python. The name GL corresponds to the [Ginzburg–Landau](https://en.wikipedia.org/wiki/Ginzburg%E2%80%93Landau_theory) theory. The library constructs differentiation matrices using finite-difference and spectral methods. The library also allows to compute fluid flow on a 2D or 3D grid from the solution of the Stokes equation using a spectral solver.
+[PyGL](https://github.com/rajeshrinet/pygl) is a numerical library for statistical field theory in Python. The name GL corresponds to the [Ginzburg–Landau](https://en.wikipedia.org/wiki/Ginzburg%E2%80%93Landau_theory) theory. The library has been specifically designed to study field theories without time-reversal symmetry. The library can be used to study models of statistical physics of various symmetries and conservation laws. In particular, we allow models with mass and momentum conservations. The library constructs differentiation matrices using finite-difference and spectral methods. To study the role of momentum conservation, the library also allows computing fluid flow from the solution of the Stokes equation.
+
 
 <br/><br/>
 
-## Research applications of PyStokes
+## Research applications of PyGL
 
-In what follows, we present we present a selected list of research applications of PyStokes. 
+In what follows, we present we present a selected list of research applications of PyGL.
 
 ## Self-shearing instability in active matter
 
@@ -29,7 +30,7 @@ Suspensions of spherical active particles often show microphase separation. At a
 
 <br/><br/>
 
-## Self-propulsion of active droplets without liquid-crystalline order
+## Self-propulsion of active droplets
 ![](https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/active_droplets.JPG) 
 Reference: [Rajesh Singh, Elsen Tjhung, and Michael E. Cates. Phys. Rev. Research 2, 032024(R) (2020)](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.032024)
 
