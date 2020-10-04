@@ -4,5 +4,5 @@ title: About
 permalink: /about/
 ---
 
-Please visit [https://rajeshrinet.github.io/about](https://rajeshrinet.github.io/about)
+Please visit [https://rajeshrinet.github.io/](https://rajeshrinet.github.io/)
 
