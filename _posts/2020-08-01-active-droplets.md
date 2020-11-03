@@ -7,10 +7,13 @@ title: Splitting and self-propelling active droplets
 sticky_rank: 2
 ---
 
+In this blog, I show that starting from a scalar field theory with mass and momentum conservation (model H), splitting and self-propulsion of droplets can be obtained when terms, which do not respect the time-reversal symmetry, are added to the model H. 
+
+
 ### Splitting active droplets
 <img src="https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/droplets/active_stress.jpg" alt="drawing" width="400"/>
 
-Microphase separation is often observed in suspensions of spherical active particles. In such suspensions, the scalar concentration is the only order parameter, when there is no orientational order in the bulk. At a continuum level, coupling the scalar density to fluid flow, there are two distinct explanations. Each involves an effective interfacial tension: the first mechanical (causing flow) and the second diffusive (causing Ostwald ripening). Here we show how the negative mechanical tension of contractile swimmers creates, via a self-shearing instability, a steady-state life cycle of droplet growth interrupted by division whose scaling behavior we predict. When the diffusive tension is also negative, this is replaced by an arrested regime (mechanistically distinct, but with similar scaling) where division of small droplets is prevented by reverse Ostwald ripening.
+Microphase separation is often observed in suspensions of spherical active particles. In such suspensions, the scalar concentration is the only order parameter, when there is no orientational order in the bulk. At a continuum level, coupling the scalar density to fluid flow, there are two distinct explanations. Each involves an effective interfacial tension: the first mechanical (causing flow) and the second diffusive (causing Ostwald ripening). In this work, we show that the negative mechanical tension of contractile swimmers creates, via a self-shearing instability, a steady-state life cycle of droplet growth interrupted by division whose scaling behavior we predict. When the diffusive tension is also negative, this is replaced by an arrested regime (mechanistically distinct, but with similar scaling) where division of small droplets is prevented by reverse Ostwald ripening.
 
 ![](https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/droplets/ssi.gif)
 
