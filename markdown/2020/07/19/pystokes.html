@@ -4,19 +4,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>PyStokes | Blog</title>
+<title>Phoresis and Stokesian hydrodynamics | Blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="PyStokes" />
+<meta property="og:title" content="Phoresis and Stokesian hydrodynamics" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Phoresis and Stokesian hydrodynamics in Python" />
-<meta property="og:description" content="Phoresis and Stokesian hydrodynamics in Python" />
+<meta name="description" content="Phoresis and Stokesian hydrodynamics of colloidal particles" />
+<meta property="og:description" content="Phoresis and Stokesian hydrodynamics of colloidal particles" />
 <link rel="canonical" href="https://rajeshrinet.github.io/blog/markdown/2020/07/19/pystokes.html" />
 <meta property="og:url" content="https://rajeshrinet.github.io/blog/markdown/2020/07/19/pystokes.html" />
 <meta property="og:site_name" content="Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-19T00:00:00-05:00" />
 <script type="application/ld+json">
-{"url":"https://rajeshrinet.github.io/blog/markdown/2020/07/19/pystokes.html","@type":"BlogPosting","headline":"PyStokes","dateModified":"2020-07-19T00:00:00-05:00","datePublished":"2020-07-19T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rajeshrinet.github.io/blog/markdown/2020/07/19/pystokes.html"},"description":"Phoresis and Stokesian hydrodynamics in Python","@context":"https://schema.org"}</script>
+{"url":"https://rajeshrinet.github.io/blog/markdown/2020/07/19/pystokes.html","@type":"BlogPosting","headline":"Phoresis and Stokesian hydrodynamics","dateModified":"2020-07-19T00:00:00-05:00","datePublished":"2020-07-19T00:00:00-05:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://rajeshrinet.github.io/blog/markdown/2020/07/19/pystokes.html"},"description":"Phoresis and Stokesian hydrodynamics of colloidal particles","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rajeshrinet.github.io/blog/feed.xml" title="Blog" /><link rel="shortcut icon" type="image/x-icon" href="/blog/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -87,7 +87,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">PyStokes</h1><p class="page-description">Phoresis and Stokesian hydrodynamics in Python</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-07-19T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Phoresis and Stokesian hydrodynamics</h1><p class="page-description">Phoresis and Stokesian hydrodynamics of colloidal particles</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-07-19T00:00:00-05:00" itemprop="datePublished">
         Jul 19, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -110,10 +110,7 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#about-">About </a></li>
-<li class="toc-entry toc-h2"><a href="#active-particles">Active particles</a></li>
-<li class="toc-entry toc-h2"><a href="#research-applications-of-pystokes">Research applications of PyStokes</a>
-<ul>
+<li class="toc-entry toc-h3"><a href="#about">About</a></li>
 <li class="toc-entry toc-h3"><a href="#controlled-optofluidic-crystallization-of-colloids-tethered-at-interfaces">Controlled optofluidic crystallization of colloids tethered at interfaces</a></li>
 <li class="toc-entry toc-h3"><a href="#periodic-orbits-of-active-particles">Periodic orbits of active particles</a></li>
 <li class="toc-entry toc-h3"><a href="#crystallization-at-a-plane-no-slip-surface">Crystallization at a plane no-slip surface</a>
@@ -139,45 +136,34 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h3"><a href="#electrohydrodynamic-flows-self-assembly-of-nanoparticles">Electrohydrodynamic flows: self-assembly of nanoparticles</a></li>
-</ul>
-</li>
-</ul><h2 id="about-">
-<a class="anchor" href="#about-" aria-hidden="true"><span class="octicon octicon-link"></span></a>About <a href="https://doi.org/10.21105/joss.02318"><img src="https://joss.theoj.org/papers/10.21105/joss.02318/status.svg" alt="DOI"></a>
-</h2>
-<p><img src="https://raw.githubusercontent.com/rajeshrinet/pystokes/master/examples/banner.png" alt="Imagel"></p>
+</ul><h3 id="about">
+<a class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h3>
+<p><img src="https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/figs/thisPyIm.png" alt="Image"></p>
 
-<p><a href="https://github.com/rajeshrinet/pystokes">PyStokes</a> is a numerical library for phoresis and Stokesian hydrodynamics in Python. It uses a grid-free method, combining the integral representation of Laplace and Stokes equations, spectral expansion, and Galerkin discretization, to compute phoretic and hydrodynamic interactions between spheres with slip boundary conditions on their surfaces. The library also computes suspension scale quantities, such as rheological response, energy dissipation and fluid flow. The computational cost is quadratic in the number of particles and upto 1e5 particles have been accommodated on multicore computers. The library has been used to model suspensions of microorganisms, synthetic autophoretic particles and self-propelling droplets.</p>
+<p>In this blog, I describe a theory for studying phoretic and hydrodynamic interactions of colloidal particles. The main focus is to understand these long-ranged interactions for a new class of colloids, called active particles, which are distinguished by their ability to produce flow, and thus motion, in the absence of external forces or torques. Active particles can create flow - even when stationary - due to large surface gradients from local nonequilibrium processes. These nonequilibrium processes may be due to the motion of cilia, as in microorganisms (Brennen &amp; Winet, 1977) or osmotic flows of various kinds in response to spontaneously generated gradients of phoretic fields (Ebbens &amp; Howse, 2010) at the colloidal particle. The latter, often called autophoresis, is a generalisation of well-known phoretic phenomena including, inter alia, electrophoresis (electric field), diffusiophoresis (chemical field) and thermophoresis (temperature field) that occur in response to externally imposed gradients of phoretic fields (Anderson, 1989).</p>
 
-<h2 id="active-particles">
-<a class="anchor" href="#active-particles" aria-hidden="true"><span class="octicon octicon-link"></span></a>Active particles</h2>
-<p>The PyStokes library has been specifically designed for studying phoretic and hydrodynamic interactions in suspensions of active particles. Active particles are a new class of colloids which create flow - even when stationary - due to large surface gradients from local nonequilibrium processes. These nonequilibrium processes may be due to the motion of cilia, as in microorganisms (Brennen &amp; Winet, 1977) or osmotic flows of various kinds in response to spontaneously generated gradients of phoretic fields
-(Ebbens &amp; Howse, 2010) at the colloidal particle. The latter, often called autophoresis, is a generalisation of well-known phoretic phenomena including, <em>inter alia</em>, electrophoresis (electric field), diffusiophoresis
-(chemical field) and thermophoresis (temperature field) that occur in response to externally
-imposed gradients of phoretic fields (Anderson, 1989).</p>
-
-<p>Hydrodynamic and phoretic interactions between active particles in a viscous fluid are central to the understanding of their collective dynamics.  Under experimentally relevant conditions, the motion of the fluid is governed by the Stokes equation and that of the phoretic field, if one is present, by the Laplace equation.  The “activity” appears in these equations as boundary conditions on the particle surfaces that prescribe the slip velocity in the Stokes equation and flux of the phoretic field in the Laplace equation</p>
+<p>Hydrodynamic and phoretic interactions between active particles in a viscous fluid are central to the understanding of their collective dynamics.  Under experimentally relevant conditions, the motion of the fluid is governed by the Stokes equation and that of the phoretic field, if one is present, by the Laplace equation.  The “activity” appears in these equations as boundary conditions on the particle surfaces that prescribe the slip velocity in the Stokes equation and flux of the phoretic field in the Laplace equation.</p>
 
 <p><img src="https://raw.githubusercontent.com/rajeshrinet/pystokes/master/docs/paper/FigSchema.png" alt="Input and output structure of PyStokes to determine the hydrodynamic and phoretic interactions between active particles in a three-dimensional domain $V$. The equations are coupled by active boundary conditions on the surface $S_{i}$ of the particles. Particle indices are $i=1,\ldots,N$ and harmonic indices are $l=1,2,\ldots$ and $\sigma=s,a,t$ (see text). \label{fig:figS}"></p>
 
-<p>The slip velocity and the phoretic flux are related by a linear constitutive law that can be derived from a detailed analysis of the boundary layer physics (Anderson, 1989). The Stokes and Laplace equations are coupled by this linear constitutive law only at the particle boundaries. The linearity of the governing equations and the coupling boundary conditions allows for a formally exact solution of the problem of determining the force per unit area on the particle surfaces. This formally exact solution can be approximated to any desired degree of accuracy by a truncated series expansion in a complete basis of functions on the particle boundaries. This, in turn, leads to an efficient and accurate numerical method for computing hydrodynamic and phoretic interactions between active particles.</p>
+<p>The slip velocity and the phoretic flux are related by a linear constitutive law that can be derived from a detailed analysis of the boundary layer physics (Anderson, 1989). The Stokes and Laplace equations are coupled by this linear constitutive law only at the particle boundaries. The linearity of the governing equations and the coupling boundary conditions allows for a formally exact solution of the problem of determining the force per unit area on the particle surfaces. This formally exact solution can be approximated to any desired degree of accuracy by a truncated series expansion in a complete basis of functions on the particle boundaries. This, in turn, leads to an efficient and accurate numerical method for computing hydrodynamic and phoretic interactions between active particles. We solve these equations simultaneously - using a grid-free method, combining the integral representation of Laplace and Stokes equations, spectral expansion, and Galerkin discretization - to compute phoretic and hydrodynamic interactions between spheres with slip boundary conditions on their surfaces. Details are available in <a href="https://dx.doi.org/10.1088/2399-6528/aaab0d">Singh and Adhikari JPC 2018</a> and <a href="https://dx.doi.org/10.1063/1.5090179">Singh, Adhikari and Cates JCP 2019</a></p>
 
-<p><br><br></p>
+<p>The above formalism has been implemented in a numerical library, PyStokes. <a href="https://github.com/rajeshrinet/pystokes">PyStokes</a> is a numerical library for phoresis and Stokesian hydrodynamics in Python. The resulting methodology has been applied to study various experimental phenomena of recent interest in active matter. In what follows, we present we present a selected list of applications.</p>
 
-<h2 id="research-applications-of-pystokes">
-<a class="anchor" href="#research-applications-of-pystokes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Research applications of PyStokes</h2>
-
-<p>In what follows, we present we present a selected list of research applications of PyStokes.</p>
-
+<p><br>
+<br></p>
 <h3 id="controlled-optofluidic-crystallization-of-colloids-tethered-at-interfaces">
 <a class="anchor" href="#controlled-optofluidic-crystallization-of-colloids-tethered-at-interfaces" aria-hidden="true"><span class="octicon octicon-link"></span></a>Controlled optofluidic crystallization of colloids tethered at interfaces</h3>
+<p><img src="https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/optofluidic_crystals.gif" alt="drawing" width="500"></p>
+
 <p>Reference: <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.125.068001">A Caciagli, R Singh, D Joshi, R Adhikari, and E Eiser,
  Physical Review Letters 125 (6), 068001 (2020)</a></p>
 
-<p><img src="https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/figs/optofluidic.jpeg" alt="drawing" width="500"></p>
-
 <p>The interplay between laser light, trapped particles, and fluid flow can produce counterintuitive effects in optical tweezing. Here we uncover an attractive, long-ranged, non-equilibrium force field centered on an optically trapped particle near a water-oil interface, produced by local heating and mediated by global fluid flow. This causes surrounding untrapped colloids, tethered to the interface but allowed to diffusely freely along it, to crystallize around the force center. In this configuration, the non-equilibrium force is the gradient of a potential, of strength proportional to the local heating, which, surprisingly, allows for an effective equilibrium description. Our results open unexplored routes to optofluidic manipulation and assembly of colloidal particles.</p>
 
-<p>See synopsis: <a href="https://physics.aps.org/articles/v13/s102"><strong>Small Spheres Freeze When Hot</strong></a></p>
+<p><img src="https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/figs/optofluidic.jpeg" alt="drawing" width="500"></p>
+
+<p>See also this synopsis: <a href="https://physics.aps.org/articles/v13/s102"><strong>Small Spheres Freeze When Hot</strong></a></p>
 
 <p><br><br></p>
 
@@ -254,8 +240,6 @@ principle is available to rationalize crystallization. Here, we identify a new n
 <a class="anchor" href="#traveling-bands-in-a-hele-shaw-cell" aria-hidden="true"><span class="octicon octicon-link"></span></a>Traveling bands in a Hele-Shaw cell</h4>
 
 <p><img src="https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/FIPS_HeleShaw_2b.gif" alt="Image"></p>
-
-<p><br><br></p>
 
 <p><img src="https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/FIPS_HeleShaw_8b.gif" alt="Image"></p>
 
