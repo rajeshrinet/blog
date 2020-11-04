@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://rajeshrinet.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://rajeshrinet.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-11-04T16:17:40-06:00</updated><id>https://rajeshrinet.github.io/blog/feed.xml</id><title type="html">Blog</title><subtitle>rajeshrinet.github.io</subtitle><entry><title type="html">Active scalar field theory</title><link href="https://rajeshrinet.github.io/blog/markdown/2020/08/01/active-droplets.html" rel="alternate" type="text/html" title="Active scalar field theory" /><published>2020-08-01T00:00:00-05:00</published><updated>2020-08-01T00:00:00-05:00</updated><id>https://rajeshrinet.github.io/blog/markdown/2020/08/01/active-droplets</id><content type="html" xml:base="https://rajeshrinet.github.io/blog/markdown/2020/08/01/active-droplets.html">&lt;p&gt;In this blog, I describe an active scalar field theory with mass and momentum conservation and use to rationalize recent experimental phenomena.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://rajeshrinet.github.io/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://rajeshrinet.github.io/blog/" rel="alternate" type="text/html" /><updated>2020-11-04T16:30:48-06:00</updated><id>https://rajeshrinet.github.io/blog/feed.xml</id><title type="html">Blog</title><subtitle>rajeshrinet.github.io</subtitle><entry><title type="html">Active scalar field theory</title><link href="https://rajeshrinet.github.io/blog/markdown/2020/08/01/active-droplets.html" rel="alternate" type="text/html" title="Active scalar field theory" /><published>2020-08-01T00:00:00-05:00</published><updated>2020-08-01T00:00:00-05:00</updated><id>https://rajeshrinet.github.io/blog/markdown/2020/08/01/active-droplets</id><content type="html" xml:base="https://rajeshrinet.github.io/blog/markdown/2020/08/01/active-droplets.html">&lt;p&gt;In this blog, I describe an active scalar field theory with mass and momentum conservation and use to rationalize recent experimental phenomena.&lt;/p&gt;
 
 &lt;h3 id=&quot;splitting-active-droplets&quot;&gt;Splitting active droplets&lt;/h3&gt;
 
@@ -13,23 +13,20 @@ $&lt;/p&gt;
 
 &lt;p&gt;Here, $\boldsymbol{J}$ is the current density of $\phi$, which obeys
 $
-\boldsymbol{J}=-M \boldsymbol{\nabla}\frac{\delta\mathcal{F}}{\delta\phi} + \sqrt{2DM}\boldsymbol{\Lambda}
+\boldsymbol{J}=-M \boldsymbol{\nabla}\frac{\delta\mathcal{F}}{\delta\phi} + \sqrt{2DM}\boldsymbol{\Lambda},
 $
-Here $M$ is a mobility, $\boldsymbol{\Lambda}$ is a zero-mean, unit-variance Gaussian white noise, and $D$ is a noise temperature, while $\mathcal{F}$ is the Landau-Ginzburg free energy functional: 
+where $M$ is a mobility, $\boldsymbol{\Lambda}$ is a zero-mean, unit-variance Gaussian white noise, and $D$ is a noise temperature, while $\mathcal{F}$ is the Landau-Ginzburg free energy functional: 
 $
 \mathcal{F}[\phi]=\int\left(\frac{a}{2}\phi^{2}+\frac{b}{4}\phi^{4}+\frac{\kappa}{2}(\boldsymbol{\nabla}\phi)^{2}\right)d\boldsymbol{r}.
-$&lt;/p&gt;
-
-&lt;p&gt;This free energy functional admits bulk phase separation for $a&amp;lt;0$, with $b,\kappa&amp;gt;0$ for stability [Chaikin and Lubensky(2000)].&lt;/p&gt;
+$
+This free energy functional admits bulk phase separation for $a&amp;lt;0$, with $b,\kappa&amp;gt;0$ for stability [Chaikin and Lubensky(2000)].&lt;/p&gt;
 
 &lt;p&gt;The fluid flow, in the limit of low Reynolds number, is obtained from the solution of the Stokes equation:
-$
-\boldsymbol{\nabla}\cdot\boldsymbol{\sigma}=-\boldsymbol{f},\qquad\boldsymbol{f}=\boldsymbol{\nabla}\cdot(\boldsymbol{\Sigma}^{E}+\boldsymbol{\Sigma}^{A}),
-$
-where $\boldsymbol{\sigma}=-p\boldsymbol{I}+\eta(\boldsymbol{\nabla}\boldsymbol{v}+(\boldsymbol{\nabla}\boldsymbol{v})^{T})$ is the Cauchy fluid stress, $\eta$ is viscosity, $\boldsymbol{I}$ is the identity tensor, and $p$ is the pressure field which contains all isotropic terms and ensures incompressibility $(\nabla\cdot\boldsymbol{v}=0)$ and
-$\boldsymbol{\Sigma}^{E}=-\kappa\boldsymbol{S}$, $\boldsymbol{\Sigma}^{A}=\tilde{\kappa}\boldsymbol{S}$, while $\boldsymbol{S}=(\boldsymbol{\nabla}\phi)(\boldsymbol{\nabla}\phi)-\tfrac{1}{d}|\boldsymbol{\nabla}\phi|^{2}\boldsymbol{I}.$&lt;/p&gt;
+$\boldsymbol{\nabla}\cdot\boldsymbol{\sigma}=-\boldsymbol{f}$ with
+$\boldsymbol{f}=\boldsymbol{\nabla}\cdot(\boldsymbol{\Sigma}^{E}+\boldsymbol{\Sigma}^{A})$. Here $\boldsymbol{\sigma}=-p\boldsymbol{I}+\eta(\boldsymbol{\nabla}\boldsymbol{v}+(\boldsymbol{\nabla}\boldsymbol{v})^{T})$ is the Cauchy fluid stress, $\eta$ is viscosity, $\boldsymbol{I}$ is the identity tensor, and $p$ is the pressure field which contains all isotropic terms and ensures incompressibility $(\nabla\cdot\boldsymbol{v}=0)$. The deviatoric stresses in the bulk are due to gradients of the field $\phi$. Their explicit form is: 
+$\boldsymbol{\Sigma}^{E}=-\kappa\boldsymbol{S}$, $\boldsymbol{\Sigma}^{A}=\tilde{\kappa}\boldsymbol{S}$, with $\boldsymbol{S}=(\boldsymbol{\nabla}\phi)(\boldsymbol{\nabla}\phi)-\tfrac{1}{d}|\boldsymbol{\nabla}\phi|^{2}\boldsymbol{I}.$&lt;/p&gt;
 
-&lt;p&gt;In the absence of $\boldsymbol{\Sigma}^{A}$, the above scalar field theory with mass and momentum conservation is called model H. With the addition of the active stress $\boldsymbol{\Sigma}^{A}$, which does not belong to any free energy, we have obtained $active$ Model H. By construction, active model H does not respect time-reversal symmetry. A self-shearing instability is obtained for active extensile stress as the flow has the effect of stretching an active interface (see below).&lt;/p&gt;
+&lt;p&gt;In the absence of $\boldsymbol{\Sigma}^{A}$, the above scalar field theory with mass and momentum conservation is called model H. With the addition of the active stress $\boldsymbol{\Sigma}^{A}$, which does not belong to any free energy, we have obtained $active$ Model H. By construction, active model H does not respect time-reversal symmetry. A self-shearing instability is obtained for active extensile stress due to stretching of the interface from the resulting fluid flow (see below).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/droplets/active_stress.jpg&quot; alt=&quot;drawing&quot; width=&quot;400&quot; /&gt;&lt;/p&gt;
 

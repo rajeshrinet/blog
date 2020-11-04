@@ -128,23 +128,20 @@ $</p>
 
 <p>Here, $\boldsymbol{J}$ is the current density of $\phi$, which obeys
 $
-\boldsymbol{J}=-M \boldsymbol{\nabla}\frac{\delta\mathcal{F}}{\delta\phi} + \sqrt{2DM}\boldsymbol{\Lambda}
+\boldsymbol{J}=-M \boldsymbol{\nabla}\frac{\delta\mathcal{F}}{\delta\phi} + \sqrt{2DM}\boldsymbol{\Lambda},
 $
-Here $M$ is a mobility, $\boldsymbol{\Lambda}$ is a zero-mean, unit-variance Gaussian white noise, and $D$ is a noise temperature, while $\mathcal{F}$ is the Landau-Ginzburg free energy functional: 
+where $M$ is a mobility, $\boldsymbol{\Lambda}$ is a zero-mean, unit-variance Gaussian white noise, and $D$ is a noise temperature, while $\mathcal{F}$ is the Landau-Ginzburg free energy functional: 
 $
 \mathcal{F}[\phi]=\int\left(\frac{a}{2}\phi^{2}+\frac{b}{4}\phi^{4}+\frac{\kappa}{2}(\boldsymbol{\nabla}\phi)^{2}\right)d\boldsymbol{r}.
-$</p>
-
-<p>This free energy functional admits bulk phase separation for $a&lt;0$, with $b,\kappa&gt;0$ for stability [Chaikin and Lubensky(2000)].</p>
+$
+This free energy functional admits bulk phase separation for $a&lt;0$, with $b,\kappa&gt;0$ for stability [Chaikin and Lubensky(2000)].</p>
 
 <p>The fluid flow, in the limit of low Reynolds number, is obtained from the solution of the Stokes equation:
-$
-\boldsymbol{\nabla}\cdot\boldsymbol{\sigma}=-\boldsymbol{f},\qquad\boldsymbol{f}=\boldsymbol{\nabla}\cdot(\boldsymbol{\Sigma}^{E}+\boldsymbol{\Sigma}^{A}),
-$
-where $\boldsymbol{\sigma}=-p\boldsymbol{I}+\eta(\boldsymbol{\nabla}\boldsymbol{v}+(\boldsymbol{\nabla}\boldsymbol{v})^{T})$ is the Cauchy fluid stress, $\eta$ is viscosity, $\boldsymbol{I}$ is the identity tensor, and $p$ is the pressure field which contains all isotropic terms and ensures incompressibility $(\nabla\cdot\boldsymbol{v}=0)$ and
-$\boldsymbol{\Sigma}^{E}=-\kappa\boldsymbol{S}$, $\boldsymbol{\Sigma}^{A}=\tilde{\kappa}\boldsymbol{S}$, while $\boldsymbol{S}=(\boldsymbol{\nabla}\phi)(\boldsymbol{\nabla}\phi)-\tfrac{1}{d}|\boldsymbol{\nabla}\phi|^{2}\boldsymbol{I}.$</p>
+$\boldsymbol{\nabla}\cdot\boldsymbol{\sigma}=-\boldsymbol{f}$ with
+$\boldsymbol{f}=\boldsymbol{\nabla}\cdot(\boldsymbol{\Sigma}^{E}+\boldsymbol{\Sigma}^{A})$. Here $\boldsymbol{\sigma}=-p\boldsymbol{I}+\eta(\boldsymbol{\nabla}\boldsymbol{v}+(\boldsymbol{\nabla}\boldsymbol{v})^{T})$ is the Cauchy fluid stress, $\eta$ is viscosity, $\boldsymbol{I}$ is the identity tensor, and $p$ is the pressure field which contains all isotropic terms and ensures incompressibility $(\nabla\cdot\boldsymbol{v}=0)$. The deviatoric stresses in the bulk are due to gradients of the field $\phi$. Their explicit form is: 
+$\boldsymbol{\Sigma}^{E}=-\kappa\boldsymbol{S}$, $\boldsymbol{\Sigma}^{A}=\tilde{\kappa}\boldsymbol{S}$, with $\boldsymbol{S}=(\boldsymbol{\nabla}\phi)(\boldsymbol{\nabla}\phi)-\tfrac{1}{d}|\boldsymbol{\nabla}\phi|^{2}\boldsymbol{I}.$</p>
 
-<p>In the absence of $\boldsymbol{\Sigma}^{A}$, the above scalar field theory with mass and momentum conservation is called model H. With the addition of the active stress $\boldsymbol{\Sigma}^{A}$, which does not belong to any free energy, we have obtained $active$ Model H. By construction, active model H does not respect time-reversal symmetry. A self-shearing instability is obtained for active extensile stress as the flow has the effect of stretching an active interface (see below).</p>
+<p>In the absence of $\boldsymbol{\Sigma}^{A}$, the above scalar field theory with mass and momentum conservation is called model H. With the addition of the active stress $\boldsymbol{\Sigma}^{A}$, which does not belong to any free energy, we have obtained $active$ Model H. By construction, active model H does not respect time-reversal symmetry. A self-shearing instability is obtained for active extensile stress due to stretching of the interface from the resulting fluid flow (see below).</p>
 
 <p><img src="https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/droplets/active_stress.jpg" alt="drawing" width="400"></p>
 
