@@ -3,11 +3,26 @@ toc: true
 layout: post
 description: Statistical field theory without time-reversal symmetry
 categories: [markdown]
-title: Splitting and self-propelling active droplets
+title: Active scalar field theory 
 sticky_rank: 2
 ---
 
-In this blog, I show that starting from a scalar field theory with mass and momentum conservation (model H), splitting and self-propulsion of droplets can be obtained when terms, which do not respect the time-reversal symmetry, are added to the model H. 
+In this blog, I show that starting from a scalar field theory with mass and momentum conservation (model H), splitting and self-propulsion of droplets can be obtained when terms, which do not respect the time-reversal symmetry, are added to the model H. The startig point in this theory is the diffusive dynamics of a conserved scalar field $\phi(\boldsymbol{r},t)$ in a momentum-conserving fluid of velocity $\boldsymbol{v}(\boldsymbol{r},t)$:
+
+$$
+\dot{\phi}&+\boldsymbol{\nabla}\cdot\boldsymbol{J}+\boldsymbol{v}\cdot\boldsymbol{\nabla}\phi=0.
+$$ 
+Here, $\boldsymbol{J}$ is the current density of $\phi$, which obeys
+
+$$
+\boldsymbol{J}&=-M\left(\boldsymbol{\nabla}\frac{\delta\mathcal{F}}{\delta\phi}\right)+\sqrt{2DM}\boldsymbol{\Lambda}
+$$
+Here $M$ is a mobility, $\boldsymbol{\Lambda}$ is a zero-mean, unit-variance Gaussian white noise, and $D$ is a noise temperature, while \mathcal{F} is the Landau-Ginzburg free energy functional: \mathcal{F}[\phi]=\int\left(\frac{a}{2}\phi^{2}+\frac{b}{4}\phi^{4}+\frac{\kappa}{2}(\boldsymbol{\nabla}\phi)^{2}\right)d\boldsymbol{r}. The free energy functional admits bulk phase separation for $a<0$, with $b,\kappa>0$ for stability [Chaikin and Lubensky(2000)].
+
+The fluid flow, in the limit of low Reynolds number, is obtained from the solution of the Stokes equation:
+$$
+\boldsymbol{\nabla}\cdot\boldsymbol{\sigma}=-\boldsymbol{f},\qquad\boldsymbol{f}=\boldsymbol{\nabla}\cdot(\boldsymbol{\Sigma}^{E}+\boldsymbol{\Sigma}^{A}),
+$$
 
 
 ### Splitting active droplets
