@@ -7,12 +7,10 @@ title: Active scalar field theory
 sticky_rank: 2
 ---
 
-In this blog, I show that starting from a scalar field theory with mass and momentum conservation (model H), splitting and self-propulsion of droplets can be obtained when terms, which do not respect the time-reversal symmetry, are added to the model H. 
-
+In this blog, I describe an active scalar field theory with mass and momentum conservation and use to rationalize recent experimental phenomena. 
 
 
 ### Splitting active droplets
-<img src="https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/droplets/active_stress.jpg" alt="drawing" width="400"/>
 
 Microphase separation is often observed in suspensions of spherical active particles. In such suspensions, the scalar concentration is the only order parameter, when there is no orientational order in the bulk. At a continuum level, coupling the scalar density to fluid flow, there are two distinct explanations. Each involves an effective interfacial tension: the first mechanical (causing flow) and the second diffusive (causing Ostwald ripening). In this work, we show that the negative mechanical tension of contractile swimmers creates, via a self-shearing instability, a steady-state life cycle of droplet growth interrupted by division whose scaling behavior we predict. When the diffusive tension is also negative, this is replaced by an arrested regime (mechanistically distinct, but with similar scaling) where division of small droplets is prevented by reverse Ostwald ripening.
 
@@ -20,34 +18,30 @@ Microphase separation is often observed in suspensions of spherical active parti
 
 
 The starting point in this theory is the diffusive dynamics of a conserved scalar field $\phi(\boldsymbol{r},t)$ in a momentum-conserving fluid of velocity $\boldsymbol{v}(\boldsymbol{r},t)$:
-
-$$
+$
 \dot{\phi}+\boldsymbol{\nabla}\cdot\boldsymbol{J}+\boldsymbol{v}\cdot\boldsymbol{\nabla}\phi=0.
-$$
+$
 
 Here, $\boldsymbol{J}$ is the current density of $\phi$, which obeys
-
-$$
+$
 \boldsymbol{J}=-M \boldsymbol{\nabla}\frac{\delta\mathcal{F}}{\delta\phi} + \sqrt{2DM}\boldsymbol{\Lambda}
-$$
-
+$
 Here $M$ is a mobility, $\boldsymbol{\Lambda}$ is a zero-mean, unit-variance Gaussian white noise, and $D$ is a noise temperature, while $\mathcal{F}$ is the Landau-Ginzburg free energy functional: 
-
-$$
+$
 \mathcal{F}[\phi]=\int\left(\frac{a}{2}\phi^{2}+\frac{b}{4}\phi^{4}+\frac{\kappa}{2}(\boldsymbol{\nabla}\phi)^{2}\right)d\boldsymbol{r}.
-$$
+$
 
 This free energy functional admits bulk phase separation for $a<0$, with $b,\kappa>0$ for stability [Chaikin and Lubensky(2000)].
 
 The fluid flow, in the limit of low Reynolds number, is obtained from the solution of the Stokes equation:
-
-$$
+$
 \boldsymbol{\nabla}\cdot\boldsymbol{\sigma}=-\boldsymbol{f},\qquad\boldsymbol{f}=\boldsymbol{\nabla}\cdot(\boldsymbol{\Sigma}^{E}+\boldsymbol{\Sigma}^{A}),
-$$
+$
+where $\boldsymbol{\sigma}=-p\boldsymbol{I}+\eta(\boldsymbol{\nabla}\boldsymbol{v}+(\boldsymbol{\nabla}\boldsymbol{v})^{T})$ is the Cauchy fluid stress, $\eta$ is viscosity, $\boldsymbol{I}$ is the identity tensor, and $p$ is the pressure field which contains all isotropic terms and ensures incompressibility $(\nabla\cdot\boldsymbol{v}=0)$ and
+$\boldsymbol{\Sigma}^{E}=-\kappa\boldsymbol{S}$, $\boldsymbol{\Sigma}^{A}=\tilde{\kappa}\boldsymbol{S}$, while $\boldsymbol{S}=(\boldsymbol{\nabla}\phi)(\boldsymbol{\nabla}\phi)-\tfrac{1}{d}|\boldsymbol{\nabla}\phi|^{2}\boldsymbol{I}.$
 
+In the absence of $\boldsymbol{\Sigma}^{A}$, the above scalar field theory with mass and momentum conservation is called model H. With the addition of the active stress $\boldsymbol{\Sigma}^{A}$, which does not belong to any free energy, we have obtained $active$ Model H. By construction, active model H does not respect time-reversal symmetry. A self-shearing instability is obtained for active extensile stress as the flow has the effect of stretching an active interface (see below). 
 
-
-In the absence of $\boldsymbol{\Sigma}^{A}$, the above scalar field theory with mass and momentum conservation is called model H. By adding an active stress $\boldsymbol{\Sigma}^{A}$ which does not belong to any free energy, we have obtained $active$ Model H. By construction active model H does not respect time-reversal symmetry. A self-shearing instability is obtained for active extensile stress as shown below. 
 <img src="https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/droplets/active_stress.jpg" alt="drawing" width="400"/>
 
 This instability interrupts the growth of droplets by splitting them. The extensile active stress has the effect of reversing the sign of the effective tension which arrests the growth. This is balanced by Ostwald ripening: small droplets evaporate while large ones grow until they in turn become unstable. The result is a dynamical steady state maintained by the self-shearing instability.
