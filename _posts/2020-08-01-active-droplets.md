@@ -21,7 +21,6 @@ The starting point in this theory is the diffusive dynamics of a conserved scala
 $
 \dot{\phi}+\boldsymbol{\nabla}\cdot\boldsymbol{J}+\boldsymbol{v}\cdot\boldsymbol{\nabla}\phi=0.
 $
-
 Here, $\boldsymbol{J}$ is the current density of $\phi$, which obeys
 $
 \boldsymbol{J}=-M \boldsymbol{\nabla}\frac{\delta\mathcal{F}}{\delta\phi} + \sqrt{2DM}\boldsymbol{\Lambda},
@@ -37,7 +36,7 @@ $\boldsymbol{\nabla}\cdot\boldsymbol{\sigma}=-\boldsymbol{f}$ with
 $\boldsymbol{f}=\boldsymbol{\nabla}\cdot(\boldsymbol{\Sigma}^{E}+\boldsymbol{\Sigma}^{A})$. Here $\boldsymbol{\sigma}=-p\boldsymbol{I}+\eta(\boldsymbol{\nabla}\boldsymbol{v}+(\boldsymbol{\nabla}\boldsymbol{v})^{T})$ is the Cauchy fluid stress, $\eta$ is viscosity, $\boldsymbol{I}$ is the identity tensor, and $p$ is the pressure field which contains all isotropic terms and ensures incompressibility $(\nabla\cdot\boldsymbol{v}=0)$. The deviatoric stresses in the bulk are due to gradients of the field $\phi$. Their explicit form is: 
 $\boldsymbol{\Sigma}^{E}=-\kappa\boldsymbol{S}$, $\boldsymbol{\Sigma}^{A}=\tilde{\kappa}\boldsymbol{S}$, with $\boldsymbol{S}=(\boldsymbol{\nabla}\phi)(\boldsymbol{\nabla}\phi)-\tfrac{1}{d}|\boldsymbol{\nabla}\phi|^{2}\boldsymbol{I}.$
 
-In the absence of $\boldsymbol{\Sigma}^{A}$, the above scalar field theory with mass and momentum conservation is called model H. With the addition of the active stress $\boldsymbol{\Sigma}^{A}$, which does not belong to any free energy, we have obtained $active$ Model H. By construction, active model H does not respect time-reversal symmetry. A self-shearing instability is obtained for active extensile stress due to stretching of the interface from the resulting fluid flow (see below). 
+In the absence of $\boldsymbol{\Sigma}^{A}$, the above scalar field theory with mass and momentum conservation is called model H. With the addition of the active stress $\boldsymbol{\Sigma}^{A}$, which does not belong to any free energy, we have obtained $active$ Model H. By construction, active model H does not respect time-reversal symmetry.  The interfacial tension, without activity, $\gamma_{{0}}=\sqrt{-8\kappa a^{3}/9b^{2}}$, is modified to $\gamma_{v}=\tilde{\kappa}\gamma_{{0}}/{\kappa}$. A self-shearing instability is obtained for active extensile stress ($\gamma_v <0$) due to stretching of the interface from the resulting fluid flow (see below).
 
 <img src="https://raw.githubusercontent.com/rajeshrinet/pystokes-misc/master/gallery/droplets/active_stress.jpg" alt="drawing" width="400"/>
 
