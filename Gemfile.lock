@@ -21,6 +21,7 @@ GEM
     ffi (1.13.1)
     forwardable-extended (2.6.0)
     gemoji (3.0.1)
+    gem "rexml", ">= 3.2.5"
     html-pipeline (2.14.0)
       activesupport (>= 2)
       nokogiri (>= 1.4)
